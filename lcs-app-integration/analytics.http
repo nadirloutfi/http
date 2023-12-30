@@ -1,0 +1,533 @@
+POST https://{{host}}/dwc/LINKEDDWC1/sap/bc/ina/service/v2/GetResponse?= HTTP/1.1
+X-Csrf-Token: Fetch
+X-Sap-Boc-Approuter-Orca-Context: {{X-Sap-Boc-Approuter-Orca-Context}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+X-Sap-Boc-User-Properties: {{X-Sap-Boc-User-Properties}}
+Connection: keep-alive
+Content-Length: 12466
+
+{
+	"Analytics": {
+		"Capabilities": [
+			"AggregationNOPNULL",
+			"AggregationNOPNULLZERO",
+			"AsyncBatchRequest",
+			"AsyncMetadataBatchRequest",
+			"AttributeHierarchy",
+			"AttributeHierarchyHierarchyFields",
+			"AttributeHierarchyUniqueFields",
+			"AttributeValueLookup",
+			"AverageCountIgnoreNullZero",
+			"BugFixHierarchyFlatKeys",
+			"CEScenarioParams",
+			"CalculateWithNullCellsUnitType",
+			"CalculatedDimension",
+			"CancelRunningRequests",
+			"CellValueOperand",
+			"ClientCapabilities",
+			"Conditions",
+			"CubeBlending",
+			"CubeBlendingCustomMembers",
+			"CubeBlendingMemberSorting",
+			"CubeBlendingOutOfContext",
+			"CubeBlendingProperties",
+			"CubeBlendingReadMode",
+			"CurrencyTranslation",
+			"CurrentMemberFilterExtension",
+			"CustomDimension1MemberType",
+			"CustomDimension2",
+			"CustomDimensionFilterCapabilities",
+			"CustomDimensionMemberExecutionStep",
+			"CustomMemberSortOrder",
+			"DataEntryOnUnbooked",
+			"DatasourceAtService",
+			"DimensionDescription",
+			"DimensionKindChartOfAccounts",
+			"DimensionKindEPMVersion",
+			"EPMResponseListSharedVersions",
+			"ExceptionAggregationAverageNullInSelectionMember",
+			"ExceptionAggregationCountNullInSelectionMember",
+			"ExceptionAggregationDimsAndFormulas",
+			"ExceptionAggregationFirstLastInSelectionMember",
+			"ExceptionSettings",
+			"Exceptions",
+			"ExpandHierarchyBottomUp",
+			"ExtHierarchy",
+			"ExtendedDimensions",
+			"ExtendedDimensionsChangeDefaultRenamingAndDescription",
+			"ExtendedDimensionsCopyAllHierarchies",
+			"ExtendedDimensionsFieldMapping",
+			"ExtendedDimensionsJoinCardinality",
+			"ExtendedDimensionsJoinColumns",
+			"ExtendedDimensionsOuterJoin",
+			"ExtendedDimensionsSkip",
+			"FastPath",
+			"FixMetaDataHierarchyAttributes",
+			"FlatKeyOnHierarchicalDisplay",
+			"HierarchyAttributePathPresentationType",
+			"HierarchyDataAndExcludingFilters",
+			"HierarchyKeyTextName",
+			"HierarchyNavigationDeltaMode",
+			"HierarchyPath",
+			"HierarchyPathUniqueName",
+			"HierarchyTrapezoidFilter",
+			"HierarchyVirtualRootNode",
+			"IgnoreUnitOfNullValueInAggregation",
+			"IgnoreUnitOfZeroValueInAggregation",
+			"InputEnablementFilterSettings",
+			"InputReadinessStates",
+			"InputReadinessWithNavigationalAttributes",
+			"IsVirtualDescription",
+			"IteratedFormula",
+			"ListReporting",
+			"LocaleSorting",
+			"MasterReadModeByDimensionGrouping",
+			"MaxResultRecords",
+			"MdsExpression",
+			"MeasureMemberCurrencyTranslations",
+			"MeasureMemberDetails",
+			"MeasureMemberMetadata",
+			"MetadataCubeQuery",
+			"MetadataDataCategory",
+			"MetadataDataSourceDefinitionValidation",
+			"MetadataDataSourceDefinitionValidationExposeDataSource",
+			"MetadataDefaultResultStructureResultAlignmentBottom",
+			"MetadataDimensionCanBeAggregated",
+			"MetadataDimensionDefaultMember",
+			"MetadataDimensionGroup",
+			"MetadataDimensionVisibility",
+			"MetadataDynamicVariable",
+			"MetadataExtendedDimensionVisibility",
+			"MetadataHierarchyLevels",
+			"MetadataHierarchyRestNode",
+			"MetadataHierarchyStructure",
+			"MetadataHierarchyUniqueName",
+			"MetadataIsDisplayAttribute",
+			"MetadataRepositorySuffix",
+			"MetadataSemanticType",
+			"MultipleExAggDimsInCalcPlan",
+			"NullZeroSuppression",
+			"Obtainability",
+			"PagingTupleCountTotal",
+			"PerformanceAnalysis",
+			"PersistResultSet",
+			"PlanningOnCalculatedDimension",
+			"ReadMode",
+			"ReadModeRelatedBooked",
+			"RemoteBlending",
+			"RemoteBlendingBW",
+			"RemoteBlendingMetadata",
+			"RemoteFilter",
+			"RequestTimeZone",
+			"RestrictedMembersConvertToFlatSelection",
+			"ResultSetAxisType",
+			"ResultSetCellDataType",
+			"ResultSetCellExplain",
+			"ResultSetCellFormatString",
+			"ResultSetCellNumericShift",
+			"ResultSetInterval",
+			"ResultSetState",
+			"ResultSetUnitIndex",
+			"ReturnErrorForInvalidQueryModel",
+			"ReturnRestrictedAndCalculatedMembersInReadmodeBooked",
+			"ReturnedDataSelection",
+			"RootOrphanNodesAfterVisibilityFilter",
+			"SP9",
+			"SemanticalErrorType",
+			"SetNullCellsUnitType",
+			"SetOperandCurrentMemberSingleNavigation",
+			"SortNewValues",
+			"SpatialClustering",
+			"SpatialFilterSRID",
+			"StatisticalAggregations",
+			"SupportsComplexFilters",
+			"SupportsCubeBlendingAggregation",
+			"SupportsDataCellMixedValues",
+			"SupportsEncodedResultSet",
+			"SupportsEncodedResultSet2",
+			"SupportsExtendedSort",
+			"SupportsHierarchySelectionAsFlatSelection",
+			"SupportsIgnoreExternalDimensions",
+			"SupportsInAModelMetadata",
+			"SupportsMemberVisibility",
+			"SupportsSetOperand",
+			"SupportsSpatialFilter",
+			"SupportsSpatialTransformations",
+			"TechnicalAxis",
+			"Totals",
+			"TotalsAfterVisibilityFilter",
+			"UndefinedTupleCountTotals",
+			"UniqueAttributeNames",
+			"UnivModelInheritedPropsRaisedPriority",
+			"UniversalModel",
+			"UseEPMVersion",
+			"ValuesRounded",
+			"Variables",
+			"VirtualDataSourceVariableValues",
+			"VisibilityFilter",
+			"VisualAggregation"
+		],
+		"DataSource": {
+			"Context": "{\"sessionContext\":{}}",
+			"InstanceId": "6110b8b6-dee7-72a6-eb22-f7564c235bc6",
+			"ObjectName": "/sap.epm.C6CYXYCBNK8C00000000000000/C6CYXYCBNK8C00000000000000_qs",
+			"SchemaName": "TEST_SPACE#SAC_42VBP1YQ07B7ZQ5X",
+			"Type": "Planning"
+		},
+		"Definition": {
+			"Dimensions": [
+				{
+					"Attributes": [
+						{
+							"Name": "[Time].key",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "[Time].description",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "[Time].path",
+							"Obtainability": "UserInterface"
+						}
+					],
+					"Axis": "Rows",
+					"Hierarchy": {
+						"ExpandBottomUp": false,
+						"HierarchyActive": true,
+						"HierarchyName": "YQM",
+						"InitialDrillLevel": 0,
+						"Name": "YQM"
+					},
+					"Name": "Time",
+					"NonEmpty": true,
+					"ReadMode": "Booked",
+					"ResultStructure": [
+						{
+							"Result": "Members",
+							"Visibility": "Visible"
+						}
+					]
+				},
+				{
+					"Attributes": [
+						{
+							"Name": "Product.ID",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "Product.Description",
+							"Obtainability": "UserInterface"
+						}
+					],
+					"Axis": "Rows",
+					"Name": "Product",
+					"NonEmpty": true,
+					"ReadMode": "Booked",
+					"ResultStructure": [
+						{
+							"Result": "Members",
+							"Visibility": "Visible"
+						}
+					]
+				},
+				{
+					"Attributes": [
+						{
+							"Name": "[Account].key",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "[Account].description",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "[Account].path",
+							"Obtainability": "UserInterface"
+						}
+					],
+					"Axis": "Columns",
+					"Hierarchy": {
+						"ExpandBottomUp": false,
+						"HierarchyActive": true,
+						"HierarchyName": "parentId",
+						"InitialDrillLevel": 0,
+						"Name": "parentId"
+					},
+					"Members": [],
+					"Name": "Account",
+					"NonEmpty": true,
+					"ReadMode": "Booked"
+				},
+				{
+					"Attributes": [
+						{
+							"Name": "Version.CATEGORY",
+							"Obtainability": "Always"
+						},
+						{
+							"Name": "Version.TYPE",
+							"Obtainability": "Always"
+						},
+						{
+							"Name": "Version.ID",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "Version.Description",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "Version.VERSION",
+							"Obtainability": "UserInterface"
+						}
+					],
+					"Axis": "Columns",
+					"Name": "Version",
+					"NonEmpty": false,
+					"ReadMode": "BookedAndSpaceAndState"
+				},
+				{
+					"Attributes": [
+						{
+							"Name": "[Measures].[Measures]",
+							"Obtainability": "UserInterface"
+						},
+						{
+							"Name": "[Measures].[Description]",
+							"Obtainability": "UserInterface"
+						}
+					],
+					"Axis": "None",
+					"Members": [
+						{
+							"Aggregation": "SUM",
+							"MemberOperand": {
+								"AttributeName": "Measures",
+								"Comparison": "=",
+								"Value": "SignedData"
+							},
+							"NumericPrecision": 31,
+							"SolveOrder": -1,
+							"UnitFixed": "USD",
+							"UnitType": "CUR",
+							"Visibility": "Visible"
+						}
+					],
+					"Name": "CustomDimension1",
+					"NonEmpty": true,
+					"ReadMode": "Booked"
+				}
+			],
+			"DynamicFilter": {
+				"Selection": {
+					"Operator": {
+						"Code": "And",
+						"SubSelections": [
+							{
+								"SetOperand": {
+									"Elements": [
+										{
+											"Comparison": "=",
+											"Low": "public.Actual"
+										}
+									],
+									"FieldName": "Version.ID"
+								}
+							},
+							{
+								"SetOperand": {
+									"Elements": [
+										{
+											"Comparison": "=",
+											"Low": "SignedData"
+										}
+									],
+									"FieldName": "[Measures].[Measures]"
+								}
+							},
+							{
+								"SetOperand": {
+									"Elements": [
+										{
+											"Comparison": "=",
+											"Low": "UNITS_SOLD"
+										}
+									],
+									"FieldName": "[Account].name",
+									"Hierarchy": {
+										"Name": "parentId"
+									}
+								}
+							},
+							{
+								"SetOperand": {
+									"Elements": [
+										{
+											"Comparison": "=",
+											"Hierarchy": {
+												"Name": "YQM"
+											},
+											"Low": "(MDS-all)",
+											"LowNavigations": [
+												{
+													"Function": "Descendants",
+													"Parameters": [
+														{
+															"Constant": 99
+														},
+														{
+															"Constant": "LEAVES"
+														}
+													]
+												}
+											]
+										}
+									],
+									"FieldName": "[Time].key",
+									"Hierarchy": {
+										"Name": "YQM"
+									}
+								}
+							}
+						]
+					}
+				}
+			},
+			"FixedFilter": {
+				"Selection": {
+					"SetOperand": {
+						"Elements": [
+							{
+								"Comparison": "=",
+								"Low": "InputSchedule.Filter",
+								"LowIs": "Variable"
+							}
+						],
+						"FieldName": "[Version.CATEGORY].[Version.CATEGORY]"
+					}
+				}
+			},
+			"Hints": {
+				"MDS": [
+					{
+						"Key": "mds_plan_use_ce_new",
+						"Value": "true"
+					}
+				]
+			},
+			"PlanningExtensions": {
+				"PlanningMode": "ForcePlanning"
+			},
+			"Query": {
+				"Axes": [
+					{
+						"Axis": "Columns",
+						"Type": 2,
+						"ZeroSuppressionType": 3
+					}
+				]
+			},
+			"ResultSetFeatureRequest": {
+				"Refresh": true,
+				"ResultEncoding": "None",
+				"ResultFormat": "Version2",
+				"ReturnedDataSelection": {
+					"Actions": true,
+					"CellDataType": true,
+					"CellExplain": false,
+					"CellFormat": true,
+					"CellMeasure": false,
+					"CellValueTypes": true,
+					"ExceptionAlertLevel": false,
+					"ExceptionName": false,
+					"ExceptionSettings": true,
+					"Exceptions": true,
+					"InputEnabled": false,
+					"InputReadinessStates": true,
+					"NumericRounding": true,
+					"NumericShift": true,
+					"TupleDisplayLevel": true,
+					"TupleDrillState": true,
+					"TupleElementIds": true,
+					"TupleElementIndexes": false,
+					"TupleLevel": false,
+					"TupleParentIndexes": true,
+					"UnitDescriptions": true,
+					"UnitIndex": true,
+					"UnitTypes": true,
+					"Units": true,
+					"Values": true,
+					"ValuesFormatted": true,
+					"ValuesRounded": true
+				},
+				"SubSetDescription": {
+					"ColumnFrom": 0,
+					"ColumnTo": 60,
+					"RowFrom": 0,
+					"RowTo": 500
+				},
+				"UseDefaultAttributeKey": false
+			},
+			"Sort": [
+				{
+					"Collator": {
+						"CaseSensitive": false
+					},
+					"Dimension": "Version",
+					"Direction": "Desc",
+					"PreserveGrouping": true,
+					"SortType": "MemberKey"
+				},
+				{
+					"Collator": {
+						"CaseSensitive": false
+					},
+					"Direction": "Asc",
+					"FieldName": "Version.CATEGORY",
+					"PreserveGrouping": true,
+					"SortType": "Field"
+				},
+				{
+					"Collator": {
+						"CaseSensitive": false
+					},
+					"Direction": "Desc",
+					"FieldName": "Version.TYPE",
+					"PreserveGrouping": true,
+					"SortType": "Field"
+				},
+				{
+					"Collator": {
+						"CaseSensitive": false
+					},
+					"Direction": "Asc",
+					"FieldName": "Version.VERSION",
+					"PreserveGrouping": true,
+					"SortType": "Field"
+				}
+			],
+			"Variables": [
+				{
+					"Name": "InputSchedule.Filter",
+					"Values": {
+						"Selection": {
+							"SetOperand": {
+								"Elements": [
+									{
+										"Comparison": "<>",
+										"Low": "Input schedule"
+									}
+								],
+								"FieldName": "[Version.CATEGORY].[Version.CATEGORY]"
+							}
+						}
+					}
+				}
+			]
+		},
+		"Language": "EN"
+	},
+	"Options": []
+}

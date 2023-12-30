@@ -1,0 +1,10 @@
+
+# https://smartpredict-newfeature-t01.orcastarkiller.canary.eu10.projectorca.cloud/ppro-firefly-i051401/headers/
+# https://sac-app-integration.orcastarkiller.canary.eu10.projectorca.cloud/ppro-firefly-i051401/headers/
+GET https://{{host}}/dwc/LINKEDDWC1/sap/bc/ina/service/v2/GetServerInfo HTTP/1.1
+X-Csrf-Token: Fetch
+X-Sap-Boc-Approuter-Orca-Context: {{X-Sap-Boc-Approuter-Orca-Context}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+X-Sap-Boc-User-Properties: {{X-Sap-Boc-User-Properties}}
+

@@ -1,0 +1,7 @@
+#@suffix = i051401
+
+GET /ping HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+Host: {{host}}
+

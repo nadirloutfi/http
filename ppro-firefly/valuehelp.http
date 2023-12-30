@@ -1,0 +1,21 @@
+###
+POST https://{{host}}/cloud/valuehelp HTTP/1.1
+Username: {{username}}
+Password: {{password}}
+Content-Type: application/json
+Tenanturl: {{tenanturl}}
+Appname: ppro-firefly-{{suffix}}
+Authorization: Bearer {{accessToken}}
+Content-Length: 221
+
+{
+    "inaSystemURI":null,
+    "cubeReference" : {
+        "schema":"TENANT_3",
+        "epmModel":"/t.TEST/SalesDemoData_qs"
+    },
+    "outputSetting": {
+        "inaQuery": false
+    },
+    "dimension":"Annual_Speed"
+}

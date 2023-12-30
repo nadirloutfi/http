@@ -1,0 +1,16 @@
+POST https://{{host}}/cloud/models?tenant={{tenantid}} HTTP/1.1
+Username: {{username}}
+Password: {{password}}
+Tenanturl: {{tenanturl}}
+Appname: ppro-firefly-{{suffix}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+Content-Length: 88
+
+{
+    "inaSystemURI": null,
+   
+    "outputSetting": {
+        "inaQuery": false
+    }
+}

@@ -1,0 +1,26 @@
+POST https://{{host}}/cloud/model?tenant={{tenantid}} HTTP/1.1
+Username: {{username}}
+Password: {{password}}
+X-Csrf-Token: Fetch
+Tenanturl: {{tenanturl}}
+Appname: ppro-firefly-{{suffix}}
+Content-Type: application/json
+Accept: application/json
+Tenantuuid: 4f192c91-d1ab-41b1-9164-a2407317c9a0
+Authorization: Bearer {{accessToken}}
+Content-Length: 322
+
+{
+	"action":"list",
+    "data": {
+		"tenantUuid": "4f192c91-d1ab-41b1-9164-a2407317c9a0",
+        "cubeIDs": [
+            "t.VWEXS9.Cbdpqbq804jtlpml5ogrva632o:Cbdpqbq804jtlpml5ogrva632o"
+        ],
+        "cubeProperties": [
+            "id",
+            "description",
+            "repositoryId"
+        ]
+    }
+}

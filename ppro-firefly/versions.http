@@ -1,0 +1,19 @@
+POST https://{{host}}/cloud/versions?tenant={{tenantid}} HTTP/1.1
+Username: {{username}}
+Password: {{password}}
+Tenanturl: {{tenanturl}}
+Appname: ppro-firefly-{{suffix}}
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+Content-Length: 241
+
+{
+    "cubeReference": {
+		"id": "C4k7hzu66kxuj6km53jwjx0ge8",
+        "schema": "TENANT_3",
+        "epmModel": "/t.1.C4k7hzu66kxuj6km53jwjx0ge8/C4k7hzu66kxuj6km53jwjx0ge8_qs"
+    },
+    "outputSetting": {
+        "inaQuery": false
+    }
+}
